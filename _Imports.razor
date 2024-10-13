@@ -1,0 +1,43 @@
+﻿@using System.Net.Http
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.JSInterop
+@using BlazorTokenApp
+@using BlazorTokenApp.Shared
+
+
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+@using Microsoft.EntityFrameworkCore;
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.Extensions.Options;
+@using Microsoft.IdentityModel.Tokens;
+@using System.IdentityModel.Tokens.Jwt;
+@using System.Security.Cryptography;
+@using System.Security.Claims;
+@using System.Text;
+@using System.ComponentModel.DataAnnotations;
+@using System.Text.Json.Serialization;
+@using System.ComponentModel.DataAnnotations.Schema;
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Mvc;
+@using Microsoft.OpenApi.Models;
+@using Microsoft.AspNetCore.Authentication.JwtBearer;
+@using Swashbuckle.AspNetCore;
+
+
+@using BlazorTokenApp.Settings;
+@using BlazorTokenApp.Models;
+@using BlazorTokenApp.Services;
+@using BlazorTokenApp.Data.DTO;
+@using BlazorTokenApp.Data;
+@using BlazorTokenApp.Pages
+
+
+@inject IAccountService accountService
+@inject IAuthService authService
+@inject IJSRuntime js
+@inject NavigationManager NavManager
